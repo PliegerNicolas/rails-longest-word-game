@@ -1,4 +1,7 @@
 class GamesController < ApplicationController
+  def index
+  end
+
   def new
     @letters = (1..10).map { ('a'..'z').to_a.sample.upcase }
     @start_time = Time.now
